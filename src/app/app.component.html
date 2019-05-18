@@ -1,3 +1,19 @@
 <ion-app>
-    <ion-router-outlet></ion-router-outlet>
+  <ion-menu contentId="content1" side="start">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item><ion-icon name="medkit"></ion-icon>Medicamentos</ion-item>
+        <ion-item ><fa-icon [icon]="['fas', 'graduation-cap']" slot="end"></fa-icon>semsa</ion-item>
+        <ion-item>Favoritos</ion-item>
+        <ion-item>Históricos</ion-item>
+        <ion-item>Notificações</ion-item>
+    </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="content1" main></ion-router-outlet>
 </ion-app>
