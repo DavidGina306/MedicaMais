@@ -1,18 +1,20 @@
 <ion-app>
   <ion-menu contentId="content1" side="start">
-    <ion-header>
+    <ion-header has-header="true">
       <ion-toolbar color="primary">
         <ion-title>Menu</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item><ion-icon name="medkit"></ion-icon>Medicamentos</ion-item>
-        <ion-item ><fa-icon [icon]="['fas', 'graduation-cap']" slot="end"></fa-icon>semsa</ion-item>
-        <ion-item>Favoritos</ion-item>
-        <ion-item>Históricos</ion-item>
-        <ion-item>Notificações</ion-item>
-    </ion-list>
+        <ion-item href="#/" menu-close><fa-icon [icon]="['fas', 'graduation-cap']"></fa-icon>Medicamentos</ion-item>
+        <ion-item href="#/" menu-close><fa-icon [icon]="['fas', 'clinic-medical']"></fa-icon>UBS</ion-item>
+        <ion-item href="#/" menu-close><fa-icon [icon]="['fas', 'star']"></fa-icon>Favoritos</ion-item>
+        <ion-item href="#/" menu-close><fa-icon [icon]="['fas', 'search']"></fa-icon>Históricos</ion-item>
+        <ion-item href="#/" menu-close><fa-icon [icon]="['fas', 'bell']"></fa-icon>Notificações</ion-item>
+        <ion-item href="#/" menu-close><fa-icon [icon]="['fas', 'clinic-medical']"></fa-icon>SEMAS</ion-item>
+        <ion-item menuClose detail-none>Close Menu</ion-item>
+      </ion-list>
     </ion-content>
   </ion-menu>
   <ion-router-outlet id="content1" main></ion-router-outlet>
