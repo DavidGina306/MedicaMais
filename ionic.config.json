@@ -1,5 +1,7 @@
 {
   "name": "MedicaMais",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
